@@ -47,7 +47,7 @@ function populateShows(shows) {
             <div class="media-body">
               <h5 class="text-primary">${show.name}</h5>
               <div><small>${show.summary}</small></div>
-              <button class="btn btn-outline-light btn-sm Show-getEpisodes">
+              <button class="btn btn-primary btn-sm Show-getEpisodes">
                 Episodes
              </button>
            </div>
@@ -126,11 +126,5 @@ async function getEpisodesAndDisplay(evt) {
 }
 
 $showsList.on("click", ".Show-getEpisodes", getEpisodesAndDisplay);
-
-$('.btn-close, .modal-footer .btn-secondary').click(function() {
-  $( "#episodes-area" ).hide();
-});
- 
-
 
 
